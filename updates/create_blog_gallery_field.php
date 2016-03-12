@@ -10,7 +10,7 @@
         public function up() {
             Schema::table('rainlab_blog_posts', function ($table) {
                 $table->integer('rjgallery_id')->unsigned()->nullable();
-                $table->foreign('rjgallery_id')->references('id')->on('raviraj_rjgallery_galleries');
+                $table->foreign('rjgallery_id')->references('id')->on('raviraj_rjgallery_galleries')->onDelete('set null');
             });
         }
 
