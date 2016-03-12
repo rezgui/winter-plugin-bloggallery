@@ -15,8 +15,9 @@
         }
 
         public function down() {
-            Schema::table('users', function ($table) {
+            Schema::table('rainlab_blog_posts', function ($table) {
                 $table->dropForeign('rjgallery_id');
+                $table->dropColumn('rjgallery_id');
             });
         }
 
