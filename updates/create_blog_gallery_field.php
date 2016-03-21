@@ -15,10 +15,12 @@
         }
 
         public function down() {
-            Schema::table('rainlab_blog_posts', function ($table) {
-                $table->dropForeign('rjgallery_id');
-                $table->dropColumn('rjgallery_id');
-            });
+            if(Schema::hasColumn('rainlab_blog_posts', 'rjgallery_id')) {
+                Schema::table('rainlab_blog_posts', function ($table) {
+                    $table->dropForeign('rainlab_blog_posts_rjgallery_id_foreign');
+                    $table->dropColumn('rjgallery_id');
+                });
+            }
         }
 
     }
