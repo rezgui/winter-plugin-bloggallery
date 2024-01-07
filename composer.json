@@ -1,7 +1,7 @@
 {
     "name": "rezgui/bloggallery",
     "type": "winter-plugin",
-    "description": "Associate a RJ Gallery" to a blog post",
+    "description": "Associate a RJ Gallery to a blog post",
     "keywords": ["winter", "cms", "RJ Gallery", "blog", "plugin"],
     "license": "MIT",
     "authors": [
