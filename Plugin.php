@@ -1,10 +1,12 @@
 <?php
 
     namespace Rezgui\BlogGallery;
-
     use System\Classes\PluginBase;
+    use Backend;
     use Winter\Blog\Controllers\Posts as PostsController;
     use Winter\Blog\Models\Post as PostModel;
+
+class Plugin extends PluginBase {
 
     class Plugin extends PluginBase {
 
@@ -30,7 +32,7 @@
                 $form->addSecondaryTabFields([
                     'rjgallery' => [
                         'label'       => 'rezgui.bloggallery::lang.form.label',
-                        'tab'         => 'rezgui.blog::lang.post.tab_manage',
+                        'tab'         => 'winter.blog::lang.post.tab_manage',
                         'type'        => 'relation',
                         'emptyOption' => 'rezgui.bloggallery::lang.form.empty'
                     ]
