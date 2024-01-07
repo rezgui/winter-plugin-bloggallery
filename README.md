@@ -1,24 +1,24 @@
 # Blog + RJ Gallery for OctoberCMS
 
 ## Introduction
-This plugin associates a "RJ Gallery" to a Blog plugin post.
+forked from skydiver/october-plugin-bloggallery, This plugin associates a "RJ Gallery" to a Blog plugin post.
 
 You will be able to work with the gallery from the **blogPost** component.
 
 
 
 ## Requirements
-- [Blog](https://octobercms.com/plugin/rainlab-blog) (RainLab.Blog)
+- Blog : Winter.Blog
 - [RJ Gallery](https://octobercms.com/plugin/raviraj-rjgallery) (Raviraj.Rjgallery)
 
 
 
 ## Installation
 * Install dependencies:
-  * `php artisan plugin:install RainLab.Blog`
+  * `php artisan plugin:install Winter.Blog`
   * `php artisan plugin:install Raviraj.Rjgallery`
 * Install the plugin:
-  * `php artisan plugin:install Martin.BlogGallery`
+  * `php artisan plugin:install Rezgui.BlogGallery`
 
 
 
