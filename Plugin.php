@@ -10,7 +10,7 @@ class Plugin extends PluginBase {
 
     class Plugin extends PluginBase {
 
-        public $require = ['Winter.Blog', 'Raviraj.Rjgallery'];
+        public $require = ['Winter.Blog', 'Hounddd.lightGallery'];
 
         public function pluginDetails() {
             return [
@@ -24,13 +24,13 @@ class Plugin extends PluginBase {
         public function boot(){
 
             PostModel::extend(function ($model) {
-                $model->belongsTo['rjgallery'] = ['Raviraj\Rjgallery\Models\Gallery'];
+                $model->belongsTo['lightgallery'] = ['Hounddd\lightGallery\Models\Gallery'];
             });
 
             PostsController::extendFormFields(function ($form, $model) {
                 if (!$model instanceof PostModel) return;
                 $form->addSecondaryTabFields([
-                    'rjgallery' => [
+                    'lightgallery' => [
                         'label'       => 'rezgui.bloggallery::lang.form.label',
                         'tab'         => 'winter.blog::lang.post.tab_manage',
                         'type'        => 'relation',
