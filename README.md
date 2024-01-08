@@ -8,7 +8,7 @@ You will be able to work with the gallery from the **blogPost** component.
 
 
 ## Requirements
-- Blog : Winter.Blog
+- [Blog](https://github.com/wintercms/wn-blog-plugin) (Winter.Blog)
 - [Hounddd lightGallery](https://github.com/Hounddd/wn-lightgallery-plugin) (Hounddd.lightGallery)
 
 
