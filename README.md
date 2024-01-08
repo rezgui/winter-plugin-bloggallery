@@ -1,7 +1,7 @@
-# Blog + RJ Gallery for OctoberCMS
+# Blog + Hounddd lightGallery for WinterCMS
 
 ## Introduction
-forked from skydiver/october-plugin-bloggallery, This plugin associates a "RJ Gallery" to a Blog plugin post.
+Inspired from skydiver/october-plugin-bloggallery, This plugin associates a "RJ Gallery" to a Blog plugin post.
 
 You will be able to work with the gallery from the **blogPost** component.
 
@@ -9,21 +9,21 @@ You will be able to work with the gallery from the **blogPost** component.
 
 ## Requirements
 - Blog : Winter.Blog
-- [RJ Gallery](https://octobercms.com/plugin/raviraj-rjgallery) (Raviraj.Rjgallery)
+- [Hounddd lightGallery](https://github.com/Hounddd/wn-lightgallery-plugin) (Hounddd.lightGallery)
 
 
 
 ## Installation
 * Install dependencies:
   * `php artisan plugin:install Winter.Blog`
-  * `php artisan plugin:install Raviraj.Rjgallery`
+  * `php artisan plugin:install Hounddd.lightGallery`
 * Install the plugin:
   * `php artisan plugin:install Rezgui.BlogGallery`
 
 
 
 ## Use
-1. Create your gallery on RJ Gallery plugin
+1. Create your gallery on Hounddd lightGallery plugin
 2. Create or edit a blog post
 3. Goto "Manage" tab
 4. Select a gallery
@@ -31,9 +31,9 @@ You will be able to work with the gallery from the **blogPost** component.
 
 
 ## Display gallery on post page
-You can insert the **RJ Gallery** component inside your **blogPost** component html like this:
+You can insert the **Hounddd lightGallery** component inside your **blogPost** component html like this:
 ```
-{% component 'gallery' gallery=post.rjgallery %}
+{% component 'gallery' gallery=post.lightgallery %}
 ```
 
 
@@ -42,10 +42,10 @@ You can insert the **RJ Gallery** component inside your **blogPost** component h
 
 * Get gallery info:
 ```
-{{ post.rjgallery }}
+{{ post.lightGallery }}
 ```
 
 * Get gallery images
 ```
-{{ post.rjgallery.images }}
+{{ post.lightGallery.images }}
 ```
