@@ -1,28 +1,17 @@
 {
     "name": "rezgui/wn-bloggallery-plugin",
     "type": "winter-plugin",
-    "description": "Associate a RJ Gallery to a blog post",
-    "keywords": ["winter", "cms", "RJ Gallery", "blog", "plugin"],
+    "description": "Associate a Hounddd lightGallery to a blog post",
+    "keywords": ["winter", "cms", "Hounddd", "lightGallery", "blog", "plugin"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Alexey Bobkov",
-            "email": "aleksey.bobkov@gmail.com",
-            "role": "Co-founder"
-        },
-        {
-            "name": "Samuel Georges",
-            "email": "daftspunky@gmail.com",
-            "role": "Co-founder"
-        },
-        {
             "name": "Yacine REZGUI",
             "email": "yacine.rezgui@gmail.com",
-            "role": "Contributor"
+            "role": "Maintainer"
         }      
     ],
     "require": {
-        "php": ">=7.2",
         "composer/installers": "~1.0"
     }
 }
